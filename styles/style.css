@@ -1,0 +1,7 @@
+/* blocks */
+@import './blocks/header.css';
+
+/* global */
+@import './global/reboot.css';
+@import './global/visually-hidden.css';
+@import './global/fonts.css';
