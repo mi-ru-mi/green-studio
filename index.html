@@ -4,28 +4,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Studio</title>
+    <meta name="description"
+        content="Green Studio создаёт живые интерьеры с помощью растений. Индивидуальный подбор, озеленение домов и офисов, уход и поддержка.">
+    <title>Green Studio — озеленение интерьеров и офисов</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
+    <header class="header">
+        <a class="header__logo" href="#" aria-label="На главную страницу">
+            <img class="header__logo-image" src="./images/logo.png" alt="Логотип студии"></a>
+        <nav class="header__nav" aria-label="Основная навигация">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a class="header__link" href="#about">О нас</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#service">Услуги</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#work">Как мы работаем</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#reviews">Отзывы</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#contacts">Связаться</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <header class="header">
-            <a class="header__logo" href="#">
-                <img class="header__logo-image" src="./images/logo.png" alt="Логотип студии">
-            </a>
-            <nav class="header__menu">
-                <ul class="header__links-list">
-                    <li class="header__links-list-item header__links-list-item_no-bullit"><a
-                            class="header__link header__link_active" href="#">О нас</a></li>
-                    <li class="header__links-list-item"><a class="header__link" href="#">Услуги</a></li>
-                    <li class="header__links-list-item"><a class="header__link" href="#">Как мы работаем</a></li>
-                    <li class="header__links-list-item"><a class="header__link" href="#">Отзывы</a></li>
-                    <li class="header__links-list-item"><a class="header__link" href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            
-        </header>
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Green Studio</h1>
+                <h2 class="hero__subtitle">Озеленяем пространства, в которых хочется жить</h2>
+                <p class="hero__text">Мы создаём живые интерьеры с помощью растений,
+                    которые подходят именно вашему дому или офису.</p>
+                <button class="button hero__button" type="button">Отправить заявку</button>
+            </div>
+        </section>
+
+        <!-- О нас -->
+        <section class="about" id="about">
+            <h2 class="about__title">Почему выбирают нас</h2>
+            <ul class="about__list">
+                <li class="about__item">
+                    <h3 class="about__item-title">Экологичный подход</h3>
+                    <p class="about__text">Мы используем только здоровые растения и безопасные материалы, подходящие для
+                        жилых помещений.</p>
+                </li>
+                <li class="about__item">
+                    <h3 class="about__item-title">Индивидуальный подбор</h3>
+                    <p class="about__text">Подбираем растения с учётом освещения, влажности и вашего образа жизни.</p>
+                </li>
+                <li class="about__item">
+                    <h3 class="about__item-title">Полный цикл работ</h3>
+                    <p class="about__text">От консультации и дизайна до доставки, посадки и дальнейшего ухода.</p>
+                </li>
+                <li class="about__item">
+                    <h3 class="about__item-title">Поддержка и уход</h3>
+                    <p class="about__text">Консультируем после установки и помогаем сохранить растения красивыми
+                        надолго.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Услуги -->
+        <section class="service" id="service">
+            <h2 class="service__title">Наши услуги</h2>
+            <ul class="service__list">
+                <li class="service__item">
+                    <h3 class="service__item-title">Озеленение квартир</h3>
+                    <p class="service__text">Создаём уют и живую атмосферу в жилых пространствах — от студий до
+                        загородных домов.</p>
+                </li>
+                <li class="service__item">
+                    <h3 class="service__item-title">Офисные пространства</h3>
+                    <p class="service__text">Озеленение офисов, переговорных и зон отдыха для комфортной и продуктивной
+                        работы.</p>
+                </li>
+                <li class="service__item">
+                    <h3 class="service__item-title">Балконы и террасы</h3>
+                    <p class="service__text">Превращаем балконы и террасы в зелёные зоны для отдыха в любое время года.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Как мы работаем -->
+        <section class="work" id="work">
+            <h2 class="work__title">Как мы работаем</h2>
+            <ul class="work__list">
+                <li class="work__item">
+                    <h3 class="work__item-title">Консультация</h3>
+                    <p class="work__text">Обсуждаем задачи, пространство и ваши пожелания.</p>
+                </li>
+                <li class="work__item">
+                    <h3 class="work__item-title">Подбор растений</h3>
+                    <p class="work__text">Подбираем растения и решения, подходящие именно под ваш интерьер.</p>
+                </li>
+                <li class="work__item">
+                    <h3 class="work__item-title">Монтаж и оформление</h3>
+                    <p class="work__text">Доставляем, высаживаем и оформляем растения на объекте.</p>
+                </li>
+                <li class="work__item">
+                    <h3 class="work__item-title">Поддержка</h3>
+                    <p class="work__text">Даём рекомендации по уходу и остаёмся на связи после завершения проекта.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Отзывы -->
+        <section class="reviews" id="reviews">
+            <h2 class="reviews__title">Отзывы наших клиентов</h2>
+            <ul class="reviews__list">
+                <li class="reviews__item">
+                    <h3 class="reviews__item-title">Отзыв 1</h3>
+                    <figure class="reviews__figure">
+                        <blockquote class="reviews__quote">Теперь квартира выглядит намного уютнее. Растения подобраны
+                            идеально, уход оказался проще, чем мы думали.</blockquote>
+                        <figcaption class="reviews__author">Анна, Москва</figcaption>
+                    </figure>
+                </li>
+                <li class="reviews__item">
+                    <h3 class="reviews__item-title">Отзыв 2</h3>
+                    <figure class="reviews__figure">
+                        <blockquote class="reviews__quote">Заказывали озеленение офиса — результат превзошёл ожидания.
+                            Команда всё сделала аккуратно и вовремя.</blockquote>
+                        <figcaption class="reviews__author">Игорь, Санкт-Петербург</figcaption>
+                    </figure>
+                </li>
+                <li class="reviews__item">
+                    <h3 class="reviews__item-title">Отзыв 3</h3>
+                    <figure class="reviews__figure">
+                        <blockquote class="reviews__quote">Очень понравился подход — всё объяснили, помогли выбрать
+                            растения под наш свет и интерьер.</blockquote>
+                        <figcaption class="reviews__author">Мария, Казань</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Контакты -->
+        <section class="contacts" id="contacts">
+            <h2 class="contacts__title">Оставьте заявку</h2>
+            <p class="contacts__text">Мы свяжемся с вами, чтобы обсудить детали и предложить лучшее решение</p>
+            <form class="contacts__form">
+                <label for="name">Ваше имя*
+                </label>
+                <input type="text" id="name" name="name" placeholder="Введите Ваше имя" required autocomplete="name">
+
+                <label for="email">Ваша электронная почта*
+                </label>
+                <input type="email" id="email" name="email" placeholder="Введите Ваш e-mail" required autocomplete="email">
+
+                <label for="message">Сообщение
+                </label>
+                <textarea placeholder="Расскажите немного о вашем пространстве и пожеланиях" name="message"
+                    id="message"></textarea>
+                <button class="button contacts__button" type="submit">Отправить заявку</button>
+            </form>
+        </section>
     </main>
+
+    <footer class="footer">
+        <a class="footer__logo" href="#" aria-label="На главную страницу">
+            <img class="footer__logo-image" src="./images/logo-long.png" alt="Логотип студии"></a>
+        <p>&copy; 2026. Все права защищены.</p>
+        <div class="footer__social">
+            <p class="footer__social-title">Социальные сети:</p>
+            <ul class="footer__social-list">
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="#" aria-label="Ссылка на Телеграм">Telegram</a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="#" aria-label="Ссылка на Вконтакте">Вконтакте</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
